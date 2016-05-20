@@ -29,3 +29,37 @@ class CopyFilenameToClipboard(sublime_plugin.TextCommand):
         
 # Past this code into file: copy_filename_to_clipboard.py inside Sublime Text 3 Packages/User directory
 # Also get Main.sublime-menu file for running this plugin from Main menu "Vivek's Commands"
+
+## Plugin to copy current file's path from 'app' directory to clipboard
+import sublime
+import sublime_plugin
+import os
+
+
+class FilepathFromSkinDir(sublime_plugin.TextCommand):
+    def run(self, edit):
+        fullpath = self.view.file_name()
+        point = "app"
+        finalPath = fullpath[fullpath.index(point):]
+        finalPath = os.path.dirname(finalPath)
+        sublime.set_clipboard(finalPath)
+
+# Past this code into file: filepath_from_app_dir.py inside Sublime Text 3 Packages/User directory
+# Also get Main.sublime-menu file for running this plugin from Main menu "Vivek's Commands"
+
+## Plugin to copy current file's path from 'app' directory to clipboard
+import sublime
+import sublime_plugin
+import os
+
+
+class FilepathFromSkinDir(sublime_plugin.TextCommand):
+    def run(self, edit):
+        fullpath = self.view.file_name()
+        point = "skin"
+        finalPath = fullpath[fullpath.index(point):]
+        finalPath = os.path.dirname(finalPath)
+        sublime.set_clipboard(finalPath)
+
+# Past this code into file: filepath_from_skin_dir.py inside Sublime Text 3 Packages/User directory
+# Also get Main.sublime-menu file for running this plugin from Main menu "Vivek's Commands"

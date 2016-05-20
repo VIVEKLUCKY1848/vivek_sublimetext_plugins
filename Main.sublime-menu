@@ -1,0 +1,17 @@
+[
+{
+	"id" : "customCommands",
+	"caption": "Vivek's Commands",
+	"children":
+	[
+	{
+		"caption" : "Copy Current File Path",
+		"command" : "copy_path_to_clipboard"
+	},
+	{
+		"caption" : "Copy Current File Name",
+		"command" : "copy_filename_to_clipboard"
+	}
+	]
+}
+]

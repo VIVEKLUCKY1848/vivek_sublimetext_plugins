@@ -11,6 +11,14 @@
 	{
 		"caption" : "Copy Current File Name",
 		"command" : "copy_filename_to_clipboard"
+	},
+	{
+		"caption" : "Filepath From 'app' Folder",
+		"command" : "filepath_from_app_dir"
+	},
+	{
+		"caption" : "Filepath From 'skin' Folder",
+		"command" : "filepath_from_skin_dir"
 	}
 	]
 }
